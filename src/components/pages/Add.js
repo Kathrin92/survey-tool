@@ -1,11 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Card from "../../Card";
+import Button from "../../Button";
 
 function Add() {
   return (
-    <div>
-      Add<Link to="/vote">Vote</Link>
-    </div>
+    <Card>
+      <Button>
+        Add <Link to="/vote">Vote</Link>
+      </Button>
+    </Card>
   );
 }
 export default Add;
