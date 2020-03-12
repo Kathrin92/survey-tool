@@ -4,13 +4,13 @@ import "./App.css";
 import Header from "./components/Header";
 import Add from "./components/pages/Add";
 import Vote from "./components/pages/Vote";
-import Diy from "./components/pages/Diy";
+import Result from "./components/pages/Result";
 
 function App() {
   return (
     <Router>
       <Header />
-      <main>
+      <main className="main">
         <Switch>
           <Route exact path="/">
             <Add />
@@ -18,8 +18,8 @@ function App() {
           <Route path="/vote">
             <Vote />
           </Route>
-          <Route path="/diy">
-            <Diy />
+          <Route path="/result">
+            <Result />
           </Route>
         </Switch>
       </main>

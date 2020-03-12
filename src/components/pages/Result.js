@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import Card from "../../Card";
 import Button from "../../Button";
 
-function Vote() {
+function Result() {
   return (
     <Card>
       <Button>
-        Vote <Link to="/result">Result</Link>
+        Result <Link to="/">Add</Link>
       </Button>
     </Card>
   );
 }
 
-export default Vote;
+export default Result;
