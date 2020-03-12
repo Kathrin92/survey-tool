@@ -65,7 +65,9 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "eject": "react-scripts eject",
+    "api": "json-server --watch db.json --port 4000"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -138,6 +140,7 @@
     ]
   },
   "devDependencies": {
+    "json-server": "^0.16.1",
     "prettier": "^1.19.1"
   }
 }

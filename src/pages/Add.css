@@ -3,12 +3,10 @@
   flex-direction: column;
   align-items: center;
 }
-
 .add-form__input {
   width: 100%;
   margin-bottom: 10px;
 }
-
 .add-form__input-question {
   background: #fff;
   border: 1px solid #707070;
@@ -16,9 +14,7 @@
   padding: 6px 10px;
   font-weight: bold;
   width: 100%;
-
 }
-
 .add-form__input-answer {
   background: none;
   border: none;
