@@ -1,14 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Card from "../../Card";
 import Button from "../../Button";
 
 function Add() {
   return (
     <Card>
-      <Button>
-        Add <Link to="/vote">Vote</Link>
-      </Button>
+      <form>
+        <input type="text" placeholder="Enter question" />
+        <input type="text" placeholder="First answer" />
+        <input type="text" placeholder="Second answer" />
+        <input type="text" placeholder="Third answer" />
+        <input type="submit" value="Create Poll" />
+      </form>
     </Card>
   );
 }
