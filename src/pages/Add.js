@@ -1,7 +1,34 @@
 import React from "react";
 import Card from "../components/Card";
-import "./Add.css";
 import Button from "../components/Button";
+import styled from "@emotion/styled";
+
+const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const Input = styled.input`
+  width: 100%;
+  margin-bottom: 10px;
+`;
+
+const QuestionInput = styled(Input)`
+  background: #fff;
+  border: 1px solid #707070;
+  border-radius: 10px;
+  padding: 6px 10px;
+  font-weight: bold;
+  width: 100%;
+`;
+
+const AnswerInput = styled(Input)`
+  background: none;
+  border: none;
+  border-bottom: 1px solid #707070;
+  padding: 6px 10px;
+`;
 
 function Add() {
   const [question, setQuestion] = React.useState("");
@@ -37,9 +64,8 @@ function Add() {
 
   return (
     <Card>
-      <form className="add-form" onSubmit={handleSubmit}>
-        <input
-          className="add-form__input add-form__input-question"
+      <Form onSubmit={handleSubmit}>
+        <QuestionInput
           type="text"
           placeholder="Enter question"
           value={question}
@@ -47,8 +73,7 @@ function Add() {
             setQuestion(event.target.value);
           }}
         />
-        <input
-          className="add-form__input add-form__input-answer"
+        <AnswerInput
           type="text"
           placeholder="First answer"
           value={answerOne}
@@ -56,8 +81,7 @@ function Add() {
             setAnswerOne(event.target.value);
           }}
         />
-        <input
-          className="add-form__input add-form__input-answer"
+        <AnswerInput
           type="text"
           placeholder="Second answer"
           value={answerTwo}
@@ -65,8 +89,7 @@ function Add() {
             setAnswerTwo(event.target.value);
           }}
         />
-        <input
-          className="add-form__input add-form__input-answer"
+        <AnswerInput
           type="text"
           placeholder="Third answer"
           value={answerThree}
@@ -75,7 +98,7 @@ function Add() {
           }}
         />
         <Button>Create Poll</Button>
-      </form>
+      </Form>
     </Card>
   );
 }
