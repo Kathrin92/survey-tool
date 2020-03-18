@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 const Card = styled.div`
   display: flex;
-  background: #f2f2f2;
+  background: ${props => props.theme.colors.backgroundCard};
   border-radius: 25px;
   padding: 20px;
   width: 100%;

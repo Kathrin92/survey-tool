@@ -4,14 +4,14 @@ import { Global, css } from "@emotion/core";
 function GlobalStyles() {
   return (
     <Global
-      styles={css`
+      styles={theme => css`
         body {
           margin: 0;
-          background-color: #918d8d;
+          background: ${theme.colors.backgroundPrimary};
           height: 100px;
           font-family: "Sen", sans-serif;
           font-size: 50px;
-          color: #a0eaa3;
+          color: cornflowerblue;
         }
       `}
     />
