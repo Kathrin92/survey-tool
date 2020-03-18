@@ -5,6 +5,7 @@ import Add from "./pages/Add";
 import Vote from "./pages/Vote";
 import Result from "./pages/Result";
 import styled from "@emotion/styled";
+import GlobalStyles from "./components/GlobalStyles";
 
 const Main = styled.main`
   padding: 20px 20px;
@@ -17,6 +18,7 @@ const Main = styled.main`
 function App() {
   return (
     <Router>
+      <GlobalStyles />
       <AppHeader />
       <Main>
         <Switch>
