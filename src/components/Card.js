@@ -8,7 +8,7 @@ const Card = styled.div`
   width: 100%;
   max-width: 500px;
   height: 180px;
-  color: #757775;
+  color: ${props => props.theme.colors.textPrimary};
   justify-content: center;
 `;
 
