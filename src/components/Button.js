@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 const Button = styled.button`
-  background: ${props => props.theme.colors.textPrimary};
+  background: ${props => props.theme.colors.backgroundAction};
   border-radius: 15px;
   padding: 6px 10px;
   margin: 10px;
