@@ -8,7 +8,7 @@ import styled from "@emotion/styled";
 import GlobalStyles from "./components/GlobalStyles";
 import { ThemeProvider } from "emotion-theming";
 //import cold from "./themes/cold";
-import warm from "./themes/night";
+import warm from "./themes/warm";
 
 const Main = styled.main`
   padding: 20px 20px;
