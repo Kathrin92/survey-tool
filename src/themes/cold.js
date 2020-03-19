@@ -1,6 +1,7 @@
 const cold = {
   colors: {
-    textPrimary: "#1dcb6d",
+    textPrimary: "#111",
+    backgroundAction: "aqua",
     backgroundCard: "#eee",
     backgroundPrimary: "lightblue"
   }
