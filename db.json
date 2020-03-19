@@ -47,6 +47,14 @@
       "answerThree": "c",
       "id": 6,
       "votes": []
+    },
+    {
+      "question": "How are you today?",
+      "answerOne": "I'm fine, thank you!",
+      "answerTwo": "I'm not shure, I'm scared!",
+      "answerThree": "Don't know",
+      "votes": [],
+      "id": 7
     }
   ]
 }
