@@ -9,12 +9,23 @@ const Header = styled.header`
   align-items: center;
 `;
 
-function AppHeader() {
+const SwitchColorButton = styled.button`
+  border: none;
+  background: none;
+  font-size: 20px;
+`;
+
+function AppHeader({ onSwitchColorButtonClick }) {
   return (
     <Header>
       <Logo />
       <Title>Survey-Tool</Title>
       <Logo />
+      <SwitchColorButton onClick={onSwitchColorButtonClick}>
+        <span role="img" aria-label="Switch theme">
+          🔥❄️
+        </span>
+      </SwitchColorButton>
     </Header>
   );
 }
